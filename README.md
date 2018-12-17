@@ -127,6 +127,7 @@ NOTE: the default creds for vagrant are used here for simplicity.  These creds a
     ansible_connection=ssh
     ansible_ssh_user=vagrant
     ansible_ssh_pass=vagrant
+    ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
 
 With the inventory.ini file in place I can now point Ansible at my new vms
